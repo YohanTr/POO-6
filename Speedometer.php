@@ -6,12 +6,11 @@ class Speedometer {
 
     public static function convertKmToMiles(int $distance)
     {
-        return $distance / self::valuesMilesToKm;
+        return round($distance / self::valuesMilesToKm, 2);
 
     }
     public static function convertMilesToKm(int $distance)
     {
-        return self::valuesMilesToKm * $distance;
+        return round(self::valuesMilesToKm * $distance, 2);
     }
 }
-
